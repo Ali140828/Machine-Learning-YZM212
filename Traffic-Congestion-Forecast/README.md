@@ -45,8 +45,6 @@ Ancak veri setine **200** gibi çok büyük bir aykırı değer eklendiğinde or
 ## Dosyalar
 - `traffic_mle.py` → Python çözümü
 - `report.pdf` → İstenen teknik rapor
-- `trafik_pmf_histogram.png` → Ana görselleştirme
-- `outlier_etkisi.png` → Aykırı değer etkisi grafiği
 
 ## Çalıştırma
 ```bash
