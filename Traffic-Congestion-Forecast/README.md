@@ -43,8 +43,12 @@ Orijinal veri için bulunan λ değeri yaklaşık `12.1429` olup, histogram ile 
 Ancak veri setine **200** gibi çok büyük bir aykırı değer eklendiğinde ortalama `24.6667` seviyesine çıkar. Bu durum MLE'nin ortalamaya dayalı olduğu için **uç değerlere hassas** olduğunu gösterir. Gerçek hayatta böyle bir hata, belediyenin trafiği olduğundan çok daha yoğun sanmasına ve gereksiz kapasite artışı, yanlış bütçe planlaması veya hatalı yol genişletme kararı almasına neden olabilir.
 
 ## Dosyalar
-- `traffic_mle.py` → Python çözümü
-- `report.pdf` → İstenen teknik rapor
+- `code.py`
+- `code_outlier.py`
+- `graph.png`
+- `graph_with_outlier.png`
+- `report.pdf`
+- `report.pdf`
 
 ## Çalıştırma
 ```bash
