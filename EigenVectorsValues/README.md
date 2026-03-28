@@ -15,7 +15,7 @@ Makine öğrenmesinde bu kavramlar özellikle aşağıdaki alanlarda kullanılı
 
 Özellikle PCA algoritması, veri setindeki en büyük varyansı yakalayan özvektörleri kullanarak veriyi daha düşük boyutlu bir uzaya projekte eder. Bu sayede veri daha basit ve anlamlı hale gelir.
 
-Sonuç olarak, matris manipülasyonu veriyi temsil etmek için kullanılırken, özdeğerler ve özvektörler bu verinin yapısını analiz etmek ve önemli özellikleri استخراج etmek için kullanılır.
+Sonuç olarak, matris manipülasyonu veriyi temsil etmek için kullanılırken, özdeğerler ve özvektörler bu verinin yapısını analiz etmek ve önemli özellikleri elde etmek için kullanılır.
 
 Kaynaklar:
 - MachineLearningMastery
@@ -43,15 +43,26 @@ https://numpy.org/doc/2.1/reference/generated/numpy.linalg.eig.html
 
 ## 3. Özdeğerlerin Eig Fonksiyonu Kullanmadan Hesaplanması
 
-Bu çalışmada özdeğerler, karakteristik denklem kullanılarak manuel olarak hesaplanmıştır.
+Bu çalışmada özdeğerler karakteristik denklem kullanılarak manuel olarak hesaplanmıştır.
 
-Bir matris için:
+Bir matris için özdeğerler aşağıdaki denklem ile bulunur:
 
-det(A - λI) = 0
+$$
+\det(A - \lambda I) = 0
+$$
 
-denkleminden özdeğerler bulunur.
+Bu denklem çözülerek özdeğerler elde edilir.
 
-Bu çalışmada elde edilen sonuçlar NumPy `eig` fonksiyonu ile karşılaştırılmış ve aynı olduğu görülmüştür.
+Bu çalışmada elde edilen sonuçlar, NumPy kütüphanesinin eig fonksiyonu ile karşılaştırılmıştır.
+
+Karşılaştırma sonucunda:
+
+- Manuel yöntem sonucu: [3, 1]
+- NumPy eig sonucu: [3, 1]
+
+Her iki yöntemde de aynı sonuçlar elde edilmiştir. Bu durum NumPy fonksiyonunun doğruluğunu göstermektedir.
+
+Ancak manuel yöntem, özellikle büyük matrisler için karmaşık ve zaman alıcıdır. Bu nedenle pratikte genellikle hazır kütüphaneler tercih edilir.
 
 Kaynak:
 https://github.com/LucasBN/Eigenvalues-and-Eigenvectors
