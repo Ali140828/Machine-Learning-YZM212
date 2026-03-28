@@ -1,47 +1,57 @@
-## 1. Makine Öğrenmesi ile Matris Manipülasyonu, Özdeğerler ve Özvektörler
 
-Makine öğrenmesinde veri genellikle matrisler şeklinde temsil edilir. Özdeğerler ve özvektörler, bu matrislerin yapısını analiz etmek için kullanılır.
+## 1. Matris Manipülasyonu, Özdeğerler ve Özvektörlerin Makine Öğrenmesi ile İlişkisi
 
-Özvektörler, bir lineer dönüşüm altında yönü değişmeyen vektörlerdir. Özdeğerler ise bu vektörlerin ne kadar ölçeklendiğini gösterir.
+Makine öğrenmesinde veriler genellikle matrisler şeklinde temsil edilir. Matris manipülasyonu, bu veriler üzerinde matematiksel işlemler yaparak anlamlı özellikler elde etmeyi sağlar.
+
+Özdeğerler (eigenvalues) ve özvektörler (eigenvectors), bir matrisin lineer dönüşüm özelliklerini analiz etmek için kullanılır. Özvektörler, bir dönüşüm uygulandığında yönü değişmeyen vektörlerdir. Özdeğerler ise bu vektörlerin ne kadar ölçeklendiğini ifade eder.
 
 Makine öğrenmesinde bu kavramlar özellikle aşağıdaki alanlarda kullanılır:
 
-- PCA (Principal Component Analysis)
-- Boyut indirgeme
+- Principal Component Analysis (PCA)
+- Boyut indirgeme (dimensionality reduction)
 - Veri sıkıştırma
 - Özellik çıkarımı (feature extraction)
+- Veri içindeki en önemli varyans yönlerinin bulunması
 
-Bu yöntemler, yüksek boyutlu veriyi daha anlamlı ve düşük boyutlu hale getirmek için kullanılır.
+Özellikle PCA algoritması, veri setindeki en büyük varyansı yakalayan özvektörleri kullanarak veriyi daha düşük boyutlu bir uzaya projekte eder. Bu sayede veri daha basit ve anlamlı hale gelir.
+
+Sonuç olarak, matris manipülasyonu veriyi temsil etmek için kullanılırken, özdeğerler ve özvektörler bu verinin yapısını analiz etmek ve önemli özellikleri استخراج etmek için kullanılır.
 
 Kaynaklar:
 - MachineLearningMastery
 - Gentle Introduction to Eigenvalues and Eigenvectors
 
+---
 
 ## 2. NumPy eig Fonksiyonu
 
-NumPy kütüphanesinin linalg modülünde bulunan eig fonksiyonu, kare matrislerin özdeğer ve özvektörlerini hesaplamak için kullanılır.
+NumPy kütüphanesinin `linalg` modülü içerisinde bulunan `eig` fonksiyonu, kare matrislerin özdeğer ve özvektörlerini hesaplamak için kullanılır.
 
-Fonksiyon şu şekilde çalışır:
+Fonksiyon bir matrisi giriş olarak alır ve:
 
-- Girdi olarak bir kare matris alır.
-- Çıktı olarak:
-  - Özdeğerler (eigenvalues)
-  - Özvektörler (eigenvectors) döndürür.
+- Eigenvalues (özdeğerler)
+- Eigenvectors (özvektörler)
 
-Özdeğerler bir vektör olarak, özvektörler ise sütunlar halinde bir matris olarak döndürülür.
+çıktı olarak döndürür.
+
+Eigenvalues bir dizi olarak, eigenvectors ise sütunlar halinde bir matris olarak döner.
 
 Kaynak:
 https://numpy.org/doc/2.1/reference/generated/numpy.linalg.eig.html
 
+---
 
 ## 3. Özdeğerlerin Eig Fonksiyonu Kullanmadan Hesaplanması
 
-Bu çalışmada verilen repository referans alınarak özdeğerler ve özvektörler manuel yöntemlerle hesaplanmıştır.
+Bu çalışmada özdeğerler, karakteristik denklem kullanılarak manuel olarak hesaplanmıştır.
 
-Aynı matris için NumPy eig fonksiyonu ile elde edilen sonuçlar ile karşılaştırıldığında sonuçların aynı olduğu görülmüştür.
+Bir matris için:
 
-Bu durum, NumPy eig fonksiyonunun doğruluğunu doğrulamaktadır.
+det(A - λI) = 0
+
+denkleminden özdeğerler bulunur.
+
+Bu çalışmada elde edilen sonuçlar NumPy `eig` fonksiyonu ile karşılaştırılmış ve aynı olduğu görülmüştür.
 
 Kaynak:
 https://github.com/LucasBN/Eigenvalues-and-Eigenvectors
