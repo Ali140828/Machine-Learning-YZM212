@@ -18,8 +18,7 @@ Makine öğrenmesinde bu kavramlar özellikle aşağıdaki alanlarda kullanılı
 Sonuç olarak, matris manipülasyonu veriyi temsil etmek için kullanılırken, özdeğerler ve özvektörler bu verinin yapısını analiz etmek ve önemli özellikleri elde etmek için kullanılır.
 
 Kaynaklar:
-- MachineLearningMastery
-- Gentle Introduction to Eigenvalues and Eigenvectors
+- https://www.datacamp.com/tutorial/eigenvectors-eigenvalues
 
 ---
 
@@ -34,7 +33,9 @@ Fonksiyon bir matrisi giriş olarak alır ve:
 
 çıktı olarak döndürür.
 
-Eigenvalues bir dizi olarak, eigenvectors ise sütunlar halinde bir matris olarak döner.
+Eigenvalues bir dizi olarak, eigenvectors ise sütun vektörleri halinde bir matris olarak döner.
+
+Bu fonksiyon arka planda lineer cebir algoritmaları kullanarak özdeğer ve özvektörleri sayısal olarak hesaplar.
 
 Kaynak:
 https://numpy.org/doc/2.1/reference/generated/numpy.linalg.eig.html
