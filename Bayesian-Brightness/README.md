@@ -147,7 +147,19 @@ Bu proje, Bayesyen yöntemlerin belirsizlik içeren problemlerde ne kadar güçl
 
 ---
 
-<pre> ```bash Bayesian_Brightness_Analysis/ │ ├── brightness_analysis.ipynb ├── README.md ├── requirements.txt ├── report.pdf │ ├── figures/ │ ├── histogram.png │ ├── trace_plot.png │ └── corner_plot.png │ └── results/ └── summary.txt ``` </pre>
+## 📂 Proje Yapısı
+
+Bayesian_Brightness_Analysis/
+├── brightness_analysis.ipynb
+├── README.md
+├── requirements.txt
+├── report.pdf
+├── figures/
+│   ├── histogram.png
+│   ├── trace_plot.png
+│   └── corner_plot.png
+└── results/
+    └── summary.txt
 
 ---
 
