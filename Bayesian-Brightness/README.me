@@ -1,0 +1,28 @@
+# Brightness Analysis of a Distant Galaxy
+
+## Problem Definition
+This project estimates the true brightness (μ) of a celestial object and the noise level (σ) from noisy observations using Bayesian inference and MCMC.
+
+## Data
+Synthetic observations were generated from a normal distribution with:
+- true_mu = 150.0
+- true_sigma = 10.0
+- n_obs = 50
+
+## Method
+The posterior distribution was sampled using the `emcee` MCMC library.
+The model includes:
+- Gaussian log-likelihood
+- Uniform prior on μ in (0, 300)
+- Uniform prior on σ in (0, 50)
+
+## Results
+Include your final median values, percentile intervals, and absolute errors.
+
+## Discussion
+Comment on:
+- Accuracy of μ
+- Why μ is estimated more precisely than σ
+- Correlation pattern in the corner plot
+- Effect of narrow prior
+- Effect of reducing n_obs to 5
