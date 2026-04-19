@@ -147,23 +147,7 @@ Bu proje, Bayesyen yöntemlerin belirsizlik içeren problemlerde ne kadar güçl
 
 ---
 
-## 10. Proje Yapısı
-
-Bayesian_Brightness_Analysis/  
-├── brightness_analysis.ipynb  
-├── README.md  
-├── requirements.txt  
-├── report.pdf  
-├── figures/  
-│   ├── histogram.png  
-│   ├── trace_plot.png  
-│   └── corner_plot.png  
-└── results/  
-    └── summary.txt  
-
----
-
-## 11. Not
+## 10. Not
 
 Her simülasyon çalıştırıldığında sonuçlar küçük farklılıklar gösterebilir.
 Bu nedenle tablo değerleri her kullanıcı için farklı olabilir.
