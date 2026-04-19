@@ -147,9 +147,9 @@ Bu proje, Bayesyen yöntemlerin belirsizlik içeren problemlerde ne kadar güçl
 
 ---
 
-## 📂 Proje Yapısı
+## 10. Proje Yapısı
 
-Bayesian_Brightness_Analysis/
+Bayesian_Brightness_Analysis/  
 ├── brightness_analysis.ipynb
 ├── README.md
 ├── requirements.txt
